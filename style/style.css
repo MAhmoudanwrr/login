@@ -1,0 +1,18 @@
+body, #signInForm, #signUpForm,#mainSection,input{
+    background-color: #24353F !important;
+}
+h2{
+    color: #17A1B7;
+}
+button{
+    border-color: #17A1B7 !important;
+
+    color: #17A1B7 !important;
+}
+button:hover{
+    background-color: #17A1B7 !important;
+    color: #fff !important;
+}
+input{
+    color: #fff !important;
+}

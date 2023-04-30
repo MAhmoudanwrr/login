@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./style/all.min.css">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <nav id="logOutNav" class="navbar navbar-expand navbar-dark bg-transparent d-none position-fixed w-100">
+        <div class="nav navbar-nav d-flex justify-content-between w-75 m-auto">
+            <a class="nav-item nav-link active fs-2 fw-bolder " href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+            <button class="btn btn-outline-danger " id="logout">LogOut</button>
+        </div>
+    </nav>  
+
+
+
+   
+    <div id="signInForm" class="form container my-5 p-4  text-center shadow-lg text-light rounded d-block ">
+        <h2 class="fw-bold mb-4">Smart Login System</h2>
+        <input type="email" name="email" id="signinemail" placeholder="Enter your E-mail" class="form-control  my-2">
+        <input type="password" name="password" id="signinpassword" placeholder="Enter your Password"
+            class="form-control  my-2">
+            <div class="text-danger text-center " id="warningSignIn" ></div>
+        <button id="signIn" type="button" class="btn btn-outline-primary w-100 my-2">Login</button>
+        <h6 class="my-3">Don't have an account? <a href="#" id="gosignup" class="text-decoration-none text-light">Sign
+                Up</a></h6 class="my-3">
+    </div>
+
+
+
+
+    <div id="signUpForm" class="form  container my-5 p-4  text-center shadow-lg text-light rounded d-none">
+        <h2 class="fw-bold mb-4">Smart Login System</h2>
+        <input type="text" name="name" id="name" placeholder="Enter your Name" class="form-control  my-2">
+        <input type="email" name="email" id="signupemail" placeholder="Enter your E-mail" class="form-control  my-2">
+        <input type="password" name="password" id="signuppassword" placeholder="Enter your Password"
+            class="form-control  my-2">
+            <div class="text-danger text-center " id="warningSignUp" ></div>
+        <button id="signUp" type="button" class="btn btn-outline w-100 my-2">Sign Up</button>
+        <div id="exist"></div>
+        <h6 class="my-3">Are you have an account? <a href="#" id="goSignIn" class="text-decoration-none text-light">Signin</a></h6
+            class="my-3">
+
+    </div>
+  
+
+
+    
+    <main id="mainSection" class="d-none  justify-content-center align-items-center vh-100 text-center text-white ">
+        <div class="home w-75 shadow-lg  p-3 rounded">
+            <h1>Welcome back, <span id="userName"></span></h1>
+        </div>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
